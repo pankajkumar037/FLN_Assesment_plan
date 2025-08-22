@@ -1,0 +1,52 @@
+2025-08-22 22:03:32,613 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 22:03:32,616 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 22:04:10,025 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 22:04:10,028 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 22:05:04,942 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 22:05:04,944 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 22:05:49,222 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 22:05:49,225 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 22:06:16,329 [INFO] FLN-API - Received /generate_plan request
+2025-08-22 22:06:16,523 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 22:06:48,024 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 22:06:48,084 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 22:06:48,176 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 22:06:58,345 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 22:06:58,359 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 22:06:58,428 [INFO] FLN-API - Successfully generated plan JSON.
+2025-08-22 23:13:31,868 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:13:31,908 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:13:49,889 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:13:49,893 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:14:15,820 [INFO] FLN-API - Received /generate_plan request
+2025-08-22 23:14:16,064 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 23:14:35,300 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 23:14:35,308 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 23:14:35,382 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 23:14:52,095 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 23:14:52,097 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 23:14:52,185 [INFO] FLN-API - Successfully generated plan JSON.
+2025-08-22 23:19:31,620 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:19:31,623 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:19:50,643 [INFO] FLN-API - Received /generate_plan request
+2025-08-22 23:19:50,961 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 23:20:26,074 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 23:20:26,081 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 23:20:26,182 [INFO] LiteLLM - 
+LiteLLM completion() model= gemini-2.5-flash-lite; provider = gemini
+2025-08-22 23:20:35,929 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyBXvBDm35vek1rQcsRlO9koawpOqyoXCoQ "HTTP/1.1 200 OK"
+2025-08-22 23:20:35,931 [INFO] LiteLLM - Wrapper: Completed Call, calling success_handler
+2025-08-22 23:20:36,004 [INFO] FLN-API - Successfully generated plan JSON.
+2025-08-22 23:23:17,033 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:23:17,036 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:25:17,279 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:25:17,283 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:26:56,443 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:26:56,446 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
+2025-08-22 23:27:30,040 [INFO] FLN-API - Loaded GEMINI_API_KEY from environment.
+2025-08-22 23:27:30,043 [INFO] FLN-API - Learning outcomes JSON loaded successfully.
