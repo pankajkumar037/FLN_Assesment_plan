@@ -112,20 +112,42 @@ The frontend communicates with your FastAPI backend at:
 ### Expected Input Format
 ```json
 {
-  "student_id": "STU001",
-  "student_name": "John Doe",
-  "current_level": "Foundation",
-  "marks": {
-    "reading": 75,
-    "writing": 68,
-    "numeracy": 82
-  },
-  "completed_activities": ["activity1", "activity2"],
-  "learning_outcomes": {
-    "outcome1": true,
-    "outcome2": false
-  }
-}
+        "roName": "AGRA",
+        "id": 2350.0,
+        "studentId": 1000002142.0,
+        "roID": 101.0,
+        "kvID": 1716.0,
+        "IOX1": 1.0,
+        "IOX2": 1.0,
+        "IOX3": 1.0,
+        "IWX1": 1.0,
+        "IWX2": 1.0,
+        "IWX3": 1.0,
+        "IWX4": 1.0,
+        "IRX1": 1.0,
+        "IRX2": 1.0,
+        "IRX3": 1.0,
+        "ENGLISH": 1.0,
+        "IHOX1": 1.0,
+        "IHOX2": 1.0,
+        "IHOX3": 1.0,
+        "IHRX1": 1.0,
+        "IHRX2": 1.0,
+        "IHRX3": 1.0,
+        "IHWX1": 1.0,
+        "IHWX2": 1.0,
+        "IHWX3": 1.0,
+        "IHWX4": 1.0,
+        "HINDI": 1.0,
+        "INX1": 2.0,
+        "INX2": 2.0,
+        "INX3": 2.0,
+        "INX4": 2.0,
+        "INX5": 2.0,
+        "INX6": 2.0,
+        "NUMERACY": 2.0,
+        "OVERALL": 1.0
+    }
 ```
 
 ### Expected Response Format
@@ -173,13 +195,7 @@ npm run build
 npm run preview
 ```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## 📝 License
 
