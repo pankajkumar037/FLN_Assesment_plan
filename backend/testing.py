@@ -14,25 +14,8 @@ with open("fln_exit.json", "w", encoding="utf-8") as f:
 
     json.dump(all_students, f, indent=4, ensure_ascii=False)
 
-print("✅ Saved all students into students.json")
+print("Saved all students into students.json")
 
-
-
-
-
-# Load Excel
-df = pd.read_excel("FLN1 EE.xlsx", sheet_name="FLN 1 Entry")
-
-# Convert to list of dicts (all rows)
-all_students = df.to_dict(orient="records")
-
-
-# Save to file
-with open("fln_entry.json", "w", encoding="utf-8") as f:
-
-    json.dump(all_students, f, indent=4, ensure_ascii=False)
-
-print("✅ Saved all students into students.json")
 
 
 
