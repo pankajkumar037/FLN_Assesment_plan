@@ -4,6 +4,7 @@ import json
 import pandas as pd
 from fastapi import FastAPI, UploadFile, Form, Request
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 from crewai import LLM, Agent, Task, Crew, Process
 from dotenv import load_dotenv
 import logging
@@ -44,6 +45,14 @@ except Exception as e:
 # ---------------- FASTAPI ----------------
 app = FastAPI(title="FLN Assessment & Plan API")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],        # Or ["http://localhost:3000"] for your React app only
+    allow_credentials=True,
+    allow_methods=["*"],        # Allow GET, POST, PUT, DELETE, etc.
+    allow_headers=["*"],        # Allow all headers
+)
+
 class StudentRow(BaseModel):
     data: dict   # student_row dictionary
 
@@ -62,7 +71,7 @@ async def generate_plan(request: StudentRow):
             goal=(
                 "1. Understand the Balwatika/Class JSON structure with levels (L1–L4) and stages (Entry/Exit).\n"
                 "2. Read student assessment data and determine:\n"
-                "   - Current class (1, 2, …)\n"
+                "   - Current class (1, 2)\n"
                 "   - Current level (L1–L4)\n"
                 "   - Current stage (Entry/Exit)\n"
                 "3. Match Lakshya_ID codes in assessment data with those in the JSON.\n"
@@ -85,10 +94,11 @@ async def generate_plan(request: StudentRow):
                 "The plan must include:\n"
                 "- Current class, level, and stage\n"
                 "- Next class, level, and stage (computed using rules above)\n"
-                "- Analysis summary\n"
+                "- Analysis \n"
                 "- Plan description\n"
                 "- Suggested activities\n"
                 "- Required outcomes not fulfilled\n\n"
+                "- Required outcomes not fulfilled - it should be matched proplery it is very important"
                 "Final JSON format:\n"
                 "{'status':'plan','current_class':...,'current_level':...,'current_stage':...,'next_class':...,'next_level':...,'next_stage':...,'analysis':...,'plan_description':...,'suggested_activities':[...],'required_outcomes_not_fulfilled':[...]}."
             ),
@@ -118,6 +128,8 @@ async def generate_plan(request: StudentRow):
                 "remember while giving current_level write  as *L1,l2,l3,l4* not as 1,2,3,4"
                 "while giving -required_outcomes_not_fulfilled- will be * list of only descrption not code* "
                 "Final JSON format:\n"
+                "*anaysis and plan description should be in details  in atleast 10-15 lines each*, tone for both will be as a teacher eg. you have to do well in ..."
+                "required_outcomes_not_fulfilled is outmoces currenlty not fullfilled it should not be empty"
                 "{'status':'plan','current_level':...,'current_stage':...,'next_stage':...,'analysis':...,'plan_description':...,'suggested_activities':[...],'required_outcomes_not_fulfilled':[...]}."
             ),
             expected_output="JSON learning plan or no_plan",
